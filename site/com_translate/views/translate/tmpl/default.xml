@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="default">
+		<message>
+			<![CDATA[Default]]>
+		</message>
+	</layout>
+	<state>
+		<name>default</name>
+		<description>Default </description>
+		<params>
+		</params>
+	</state>
+</metadata>

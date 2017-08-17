@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+ <name>translate</name>
+ 
+ <creationDate>2007-02-22</creationDate>
+ <author>UMVA</author>
+ <authorEmail></authorEmail>
+ <authorUrl>http://www.example.org</authorUrl>
+ <copyright>Copyright Info</copyright>
+ <license>License Info</license>
+ 
+ <version>1.1</version>
+ 
+ <description>This is a translation component</description>
+ 
+  <menu>Translation</menu>
+
+ <files folder="site">
+  <filename>controller.php</filename>
+   <filename>translate.php</filename>
+	<filename>index.html</filename>
+
+  
+  <filename>controllers/translate.php</filename>
+  <filename>controllers/phpexcelreader.php</filename>
+  <filename>controllers/chooselanguage.php</filename>
+  <filename>controllers/index.html</filename>
+  
+  <filename>models/index.html</filename>
+  <filename>models/translate.php</filename>
+  <filename>models/phpexcelreader.php</filename>
+  <filename>models/chooselanguage.php</filename>
+ 
+  <filename>views/index.html</filename>
+
+  <filename>views/translate/view.html.php</filename>
+  <filename>views/translate/index.html</filename>
+  <filename>views/translate/tmpl/index.html</filename>
+  <filename>views/translate/metadata.xml</filename>	
+  <filename>views/translate/tmpl/default.php</filename>
+  <filename>views/translate/tmpl/form.php</filename>
+  <filename>views/translate/tmpl/form.xml</filename>
+  <filename>views/translate/tmpl/default.xml</filename>
+  
+  
+  <filename>views/chooselanguage/index.html</filename>
+  <filename>views/chooselanguage/view.html.php</filename>
+  <filename>views/chooselanguage/metadata.xml</filename>
+  <filename>views/chooselanguage/tmpl/createlanguage.php</filename>
+  <filename>views/chooselanguage/tmpl/index.html</filename>
+  <filename>views/chooselanguage/tmpl/createlanguage.xml</filename>
+  
+  <filename>views/phpexcelreader/metadata.xml</filename>
+  <filename>views/phpexcelreader/index.html</filename>
+  <filename>views/phpexcelreader/tmpl/index.html</filename>
+  <filename>views/phpexcelreader/tmpl/browse.xml</filename>
+  <filename>views/phpexcelreader/view.html.php</filename>
+  <filename>views/phpexcelreader/tmpl/browse.php</filename>
+</files>
+
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+
+ <administration>
+  <menu>Translation</menu>
+
+	  <files folder="admin">
+	  <filename>index.html</filename>
+	  <filename>install.sql</filename>
+	  <filename>uninstall.sql</filename>
+	   <filename>tables/phpexcelreader.php</filename>
+	   <filename>tables/translate.php</filename>
+	   <filename>tables/index.html</filename>
+	   <filename>tables/chooselanguage.php</filename>
+
+       <filename>tables/ne.php</filename>
+	   <filename>tables/en.php</filename>
+	   
+	   <filename>helpers/excel_reader2.php</filename>
+	   <filename>helpers/index.html</filename>
+	   </files>
+ </administration>
+</install>
